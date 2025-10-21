@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+h1{
+    text-align: center;
+    padding: 10px 0px ;
+    background-color: goldenrod;
+}
+
+h2{
+    padding: 10px;
+}
+
+div{
+    margin: 10px 30px;
+    padding: 10px 20px;
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: aliceblue;
+}
+div h3{
+    margin: 5px 0px;
+}
+
+#principal{
+    list-style-position: inside;
+    text-align: left;
+}
+
+.segundario{
+    margin-left: 20px;
+}
+
