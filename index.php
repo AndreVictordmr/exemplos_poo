@@ -28,20 +28,9 @@
         <h2>Trabalhando com classes e objetos</h2>
         
         <h3>Acessando/Lendo os dados dos Objetos</h3>
-        <h4>Cliente A</h4>
-        <ul>
-            <li>Nome: <?=$clienteA->name?></li>
-            <li>Idade: <?=$clienteA->idade?> anos</li>
-            <li>Email: <?=$clienteA->email?></li>
-        </ul>
+        <?=$clienteA->monstraDados();?>
         <hr>
-        <section>
-            <h4>Cliente B</h4>
-            <p><b>Nome:</b> <?=$clienteB->name?></p>
-            <p><b>Idade:</b> <?=$clienteB->idade?> anos</p>
-            <p><b>Email:</b> <?=$clienteB->email?></p>
-        </section>
-        <hr>
+        <?=$clienteB->monstraDados();?>
 
         <pre><?=var_dump($clienteA,$clienteB);?></pre>
     </body>
