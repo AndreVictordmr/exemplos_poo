@@ -23,16 +23,19 @@
             <ul id="principal">
                 <li><?=$livro1->titulo;?>
                     <ul class="segundario">
+                        <li><b>Autor: </b> <?=$livro1->autor?></li>
                         <li><b>Paginas:</b> <?=$livro1->paginas?></li>
                     </ul>
                 </li>
                 <li><?=$livro2->titulo;?>
                     <ul class="segundario">
+                        <li><b>Autor: </b> <?=$livro2->autor?></li>
                         <li><b>Paginas:</b> <?=$livro2->paginas?></li>
                     </ul>
                 </li>
                 <li><?=$livro3->titulo;?>
                     <ul class="segundario">
+                        <li><b>Autor: </b> <?=$livro3->autor?></li>
                         <li><b>Paginas:</b> <?=$livro3->paginas?></li>
                     </ul>
                 </li>
