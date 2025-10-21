@@ -31,14 +31,14 @@
         <h4>Cliente A</h4>
         <ul>
             <li>Nome: <?=$clienteA->name?></li>
-            <li>Idade: <?=$clienteA->idade?></li>
+            <li>Idade: <?=$clienteA->idade?> anos</li>
             <li>Email: <?=$clienteA->email?></li>
         </ul>
         <hr>
         <section>
             <h4>Cliente B</h4>
             <p><b>Nome:</b> <?=$clienteB->name?></p>
-            <p><b>Idade:</b> <?=$clienteB->idade?></p>
+            <p><b>Idade:</b> <?=$clienteB->idade?> anos</p>
             <p><b>Email:</b> <?=$clienteB->email?></p>
         </section>
         <hr>
