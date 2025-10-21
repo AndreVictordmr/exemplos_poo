@@ -2,7 +2,8 @@
 //Importando a classe Cliente
     require_once "src/Cliente.php";
 
-
+    $clienteA=new Cliente("Jonny","jonninho@gmail.com",20);
+    $clienteB=new Cliente("Felix","bago@gmail.com",50);
 ?>
 
 <!DOCTYPE html>
@@ -18,6 +19,6 @@
         <h2>Trabalhando com classes e objetos</h2>
         
 
-        
+        <?=var_dump($clienteA)?>
     </body>
 </html>

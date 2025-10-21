@@ -4,13 +4,11 @@ class Cliente{
     public int $idade;
     public string $email;
 
-    /*Método responsavel por exibir os dados de um objeto */
-    //Usamos void para sinalizar que o método não tem return
-    public function monstraDados():void{
-        echo    "<div>
-                    <h4> $this->name </h4>
-                    <p><b>E-mail de contato:</b> $this->email </p>
-                    <p><b>Idade:</b> $this->idade anos</p>
-                </div>";
+    /*Método construtor: responsável por 'construir' um objeto COM seus dados no momento da criação */
+    public function __construct(string $name,string $email,int $idade){
+        /*Atribuindo os valores recebidos através dos parâmetros do contrutor,aos atributos da classe*/
+        $this->name=$name;
+        $this->email=$email;
+        $this->idade=$idade;
     }
 }
