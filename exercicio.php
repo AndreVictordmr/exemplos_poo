@@ -4,7 +4,7 @@
     $livro1 = new Livro("One piece Vol.110","Eiichiro Oda",200);
     $livro2 = new Livro("Jujutsu Kaisen:Batalha de Fenticeiro Vol.1","Gege Akutami",192);
     $livro3 = new Livro("Berserker - Edição de Luxo Vol.14","Kentaro Miura",240);
-    $livre4 = new Livro("tex","teste");
+
 ?>
 
 <!DOCTYPE html>
