@@ -18,8 +18,11 @@
         <h1>Exemplos de PHP com POO</h1>
         <hr>
         <h2>Trabalhando com classes e objetos</h2>
-        
+        <div>
+            <h2><?= $clienteA->getName()?></h2>
+            <p><?= $clienteA->getIdade()?></p>
+            <p><?= $clienteA->getEmail()?></p>
+        </div>
 
-        <?=var_dump($clienteA)?>
     </body>
 </html>
