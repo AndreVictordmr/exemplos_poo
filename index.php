@@ -4,6 +4,7 @@
 
     $clienteA=new Cliente("Jonny","jonninho@gmail.com",20,"(24)9999-9999");
     $clienteB=new Cliente("Felix","bago@gmail.com",50,"(41)98152-8975");
+    $clienteC=new Cliente("Jose","marceneiroJose@gmail.com",49);
 ?>
 
 <!DOCTYPE html>
