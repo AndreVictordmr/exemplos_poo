@@ -1,8 +1,8 @@
 <?php 
 class Livro{
-    public string $titulo;
-    public string $autor;
-    public ?int $paginas;
+    protected string $titulo;
+    protected string $autor;
+    protected ?int $paginas;
 
     protected function verificarPaginas(string $titulo):void{
         if($this->paginas <=0 && $this->paginas != null){
@@ -22,6 +22,21 @@ class Livro{
         $this->autor = $autor;
         $this->paginas = $paginas;
         $this->verificarPaginas($titulo);
+    }
+
+    public function setTitulo():string{
+        return $this->titulo;
+    }
+    public function setAutor():string{
+        return $this->autor;
+    }
+
+    public function setPaginas(){
+        if($this->paginas === null){
+            return "Não informado";
+        }else{
+        return $this->paginas;
+        }
     }
 
 }
