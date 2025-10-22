@@ -2,8 +2,8 @@
 //Importando a classe Cliente
     require_once "src/Cliente.php";
 
-    $clienteA=new Cliente("Jonny","jonninho@gmail.com",20);
-    $clienteB=new Cliente("Felix","bago@gmail.com",50);
+    $clienteA=new Cliente("Jonny","jonninho@gmail.com",20,"(24)9999-9999");
+    $clienteB=new Cliente("Felix","bago@gmail.com",50,"(41)98152-8975");
 ?>
 
 <!DOCTYPE html>
