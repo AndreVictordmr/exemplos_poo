@@ -3,7 +3,9 @@ class Cliente{
     public string $name;
     public int $idade;
     public string $email;
-    public string $telefone;
+    
+    // Telefone é opcional, ou seja, caso não seja informado ficará valendo null
+    public ?string $telefone;
 
     /*Método construtor: responsável por 'construir' um objeto COM seus dados no momento da criação */
     public function __construct(string $name,string $email,int $idade,string $fone){
