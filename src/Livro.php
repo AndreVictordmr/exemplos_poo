@@ -4,9 +4,12 @@ class Livro{
     protected string $autor;
     protected ?int $paginas;
 
-    protected function verificarTitulo(string $titulo):void{
+    protected function verificarTitulo(string $titulo):bool{
         if(mb_strlen($titulo)<3 || empty($titulo)){
             echo "<p style= 'color:red'>Títulos não pode ser vazio ou ter menos do que 3 letras </p>";
+            return false;
+        }else{
+            return true;
         }
     }
     public function __construct(string $titulo,string $autor, ?int $paginas=null) {
@@ -17,23 +20,26 @@ class Livro{
 
     public function getTitulo():string{return $this->titulo;}
     private function setTitulo(string $valor):void{
-        $this->verificarTitulo($valor);
-        $this->titulo = $valor;
+        if($this->verificarTitulo($valor)){
+            $this->titulo = $valor;
+        }
     }
 
     public function getAutor():string{return $this->autor;}
     private function setAutor(string $valor):void{
         if(empty($valor)){
             echo "<p style= 'color:red'>Autor não informado</p>";
+        }else{      
+            $this->autor = $valor;
         }
-        $this->autor = $valor;
     }
     public function getPaginas():?int{return $this->paginas;}
     private function setPaginas(?int $valor):void{
         if($valor <=0 && $valor != null){
             echo "<p style= 'color:red'>Quantidade inválida de páginas</p>";
-        }      
-        $this->paginas = $valor;
+        }else{      
+            $this->paginas = $valor;
+        }
         
     }
 
