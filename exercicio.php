@@ -25,19 +25,19 @@
                 <li><?=$livro1->getTitulo();?>
                     <ul class="segundario">
                         <li><b>Autor: </b> <?=$livro1->getAutor()?></li>
-                        <li><b>Paginas:</b> <?=$livro1->getPaginas()?></li>
+                        <li><b>Paginas:</b> <?=$livro1->getPaginas()??"Não informado"?></li>
                     </ul>
                 </li>
                 <li><?=$livro2->getTitulo();?>
                     <ul class="segundario">
                         <li><b>Autor: </b> <?=$livro2->getAutor()?></li>
-                        <li><b>Paginas:</b> <?=$livro2->getPaginas()?></li>
+                        <li><b>Paginas:</b> <?=$livro2->getPaginas()??"Não informado"?></li>
                     </ul>
                 </li>
                 <li><?=$livro3->getTitulo();?>
                     <ul class="segundario">
                         <li><b>Autor: </b> <?=$livro3->getAutor()?></li>
-                        <li><b>Paginas:</b> <?=$livro3->getPaginas()?></li>
+                        <li><b>Paginas:</b> <?=$livro3->getPaginas()??"Não informado"?></li>
                     </ul>
                 </li>
             </ul>
