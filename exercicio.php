@@ -22,22 +22,22 @@
         <div>
             <h3>Mangas</h3>
             <ul id="principal">
-                <li><?=$livro1->setTitulo();?>
+                <li><?=$livro1->getTitulo();?>
                     <ul class="segundario">
-                        <li><b>Autor: </b> <?=$livro1->setAutor()?></li>
-                        <li><b>Paginas:</b> <?=$livro1->setPaginas()?></li>
+                        <li><b>Autor: </b> <?=$livro1->getAutor()?></li>
+                        <li><b>Paginas:</b> <?=$livro1->getPaginas()?></li>
                     </ul>
                 </li>
-                <li><?=$livro2->setTitulo();?>
+                <li><?=$livro2->getTitulo();?>
                     <ul class="segundario">
-                        <li><b>Autor: </b> <?=$livro2->setAutor()?></li>
-                        <li><b>Paginas:</b> <?=$livro2->setPaginas()?></li>
+                        <li><b>Autor: </b> <?=$livro2->getAutor()?></li>
+                        <li><b>Paginas:</b> <?=$livro2->getPaginas()?></li>
                     </ul>
                 </li>
-                <li><?=$livro3->setTitulo();?>
+                <li><?=$livro3->getTitulo();?>
                     <ul class="segundario">
-                        <li><b>Autor: </b> <?=$livro3->setAutor()?></li>
-                        <li><b>Paginas:</b> <?=$livro3->setPaginas()?></li>
+                        <li><b>Autor: </b> <?=$livro3->getAutor()?></li>
+                        <li><b>Paginas:</b> <?=$livro3->getPaginas()?></li>
                     </ul>
                 </li>
             </ul>
