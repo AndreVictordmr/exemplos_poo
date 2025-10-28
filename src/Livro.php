@@ -29,7 +29,7 @@ class Livro{
         $this->autor = $valor;
     }
     public function getPaginas():?int{return $this->paginas;}
-    private function setPaginas(?int $valor){
+    private function setPaginas(?int $valor):void{
         if($valor <=0 && $valor != null){
             echo "<p style= 'color:red'>Quantidade inválida de páginas</p>";
         }      
