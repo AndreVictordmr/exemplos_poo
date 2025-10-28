@@ -6,7 +6,7 @@ class Livro{
 
     protected function verificarTitulo(string $titulo):void{
         if(mb_strlen($titulo)<3 || empty($titulo)){
-            echo "<p style= 'color:red'>Título não pode ser vazio ter menos do que 3 letras </p>";
+            echo "<p style= 'color:red'>Títulos não pode ser vazio ou ter menos do que 3 letras </p>";
         }
     }
     public function __construct(string $titulo,string $autor, ?int $paginas=null) {
