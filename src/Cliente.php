@@ -7,22 +7,38 @@ class Cliente{
     private ?string $telefone;
 
     public function __construct(string $name,string $email,int $idade,?string $fone=null){
-        $this->name=$name;
-        $this->email=$email;
-        $this->idade=$idade;
-        $this->telefone=$fone;
+        $this->setName($name);
+        $this->setEmail($email);
+        $this->setIdade($idade);
+        $this->telefone = $fone;
     }
 
     public function getName():string{return $this->name;}
-    public function setName(string $name):void{$this->name=$name;}
+    public function setName(string $valor):void{
+        if(empty($valor)){
+            echo "<p style='color:red'>Nome não pode ser vazio</p>";
+        }else{ $this->name=$valor;}
+    }
 
 
     public function getIdade():int{return $this->idade;}
-    public function setIdade(int $idade):void{$this->idade=$idade;}
+    public function setIdade(int $valor):void{
+        if($valor<0){
+            echo "<p style='color:red'>Idade invalida</p>";
+        }else{ $this->idade=$valor;}
+    }
 
     public function getEmail():string{return $this->email;}
-    public function setEmail(string $email):void{$this->email=$email;}
+    public function setEmail(string $valor):void{
+        /*Usamos a filter_var() com a constate FILTER_VALIDATE_EMIL para o PHP verificar se o valor de email informado  é valido. se sim, retorna TRUE. senão, retorna FALSE */
+        $validaEmail =  filter_var($valor,FILTER_VALIDATE_EMAIL);
+        if(!$validaEmail){
+            echo "<p style='color:red'>E-mail invalido</p>";
+        }else{
+            $this->email=$valor;
+        }
+    }
 
-    public function getTelefone():string{return $this->telefone;}
-    public function setTelefone(string $telefone):void{$this->telefone=$telefone;}
+    public function getTelefone():?string{return $this->telefone;}
+    
 }

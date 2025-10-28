@@ -19,9 +19,10 @@
         <hr>
         <h2>Trabalhando com classes e objetos</h2>
         <div>
-            <h2><?= $clienteA->getName()?></h2>
-            <p><?= $clienteA->getIdade()?></p>
-            <p><?= $clienteA->getEmail()?></p>
+            <h2>Nome: <?= $clienteA->getName()?></h2>
+            <p>Idade: <?= $clienteA->getIdade()?></p>
+            <p>E-mail: <?= $clienteA->getEmail()?></p>
+            <p>Telefone: <?=$clienteA->getTelefone()??"Não informado"?></p>
         </div>
 
     </body>
